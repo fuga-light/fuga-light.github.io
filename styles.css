@@ -106,4 +106,21 @@ body.dark button:hover {
 body.dark .qr-container {
   background: #1f1f1f;
 }
+/* ====== SỬA LỖI DARK MODE CHƯƠNG ====== */
+body.dark article {
+  background-color: #1e1e1e; /* Màu nền sáng hơn nhẹ để chữ nổi rõ */
+  color: #e5e5e5; /* Màu chữ sáng hơn */
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+body article {
+  background-color: #fff;
+  color: #222;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
 
