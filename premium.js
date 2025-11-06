@@ -9,8 +9,8 @@ else document.body.classList.remove('dark');
 document.addEventListener('DOMContentLoaded', ()=>{
   const saved = localStorage.getItem('fuga_theme_dark') === '1';
   setTheme(saved);
-  document.getElementById('theme-toggle').addEventListener('click', ()=> setTheme(!document.document.body.classList.contains('dark')));
-  document.getElementById('theme-toggle-2').addEventListener('click', ()=> setTheme(!document.document.body.classList.contains('dark')));
+  document.getElementById('theme-toggle').addEventListener('click', ()=> setTheme(!document.document.documentElement.classList.contains('dark')));
+  document.getElementById('theme-toggle-2').addEventListener('click', ()=> setTheme(!document.document.documentElement.classList.contains('dark')));
 
   // lightbox
   document.querySelectorAll('.illustration img').forEach(img=>{
