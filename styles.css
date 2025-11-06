@@ -75,24 +75,70 @@ article img {
 }
 
 /* ========================
-   DARK MODE CƠ BẢN
+   🌙 DARK MODE HIGH CONTRAST
 ======================== */
+
 body.dark {
-  background-color: #000;
-  color: #f5f5f5;
+  background-color: #000;       /* Nền tối hoàn toàn */
+  color: #fefefe;               /* Chữ trắng rõ nét */
 }
 
+/* Phần nội dung chính */
 body.dark article {
-  background-color: #0a0a0a;
-  color: #f1f1f1;
+  background-color: #0a0a0a;    /* Nền bài viết đen nhẹ hơn nền chính */
+  color: #ffffff;               /* Chữ trắng sáng */
   border-radius: 12px;
   padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
   box-shadow: 0 0 18px rgba(255, 255, 255, 0.05);
 }
 
-body.dark article img {
-  filter: brightness(0.85) contrast(1.05);
+/* Tiêu đề chương */
+body.dark h2 {
+  color: #ffffff;
+  text-shadow: 0 0 4px rgba(255,255,255,0.2);
 }
+
+/* Đoạn văn */
+body.dark p {
+  color: #eaeaea;
+  line-height: 1.8;
+}
+
+/* Ảnh minh họa trong Dark Mode */
+body.dark article img {
+  filter: brightness(0.8) contrast(1.1); /* giảm sáng nhẹ để hài hòa */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+
+/* QR code */
+body.dark .qr-container {
+  background: #111;
+  box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+}
+
+/* Header */
+body.dark header {
+  background: #080808;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.dark header a.logo {
+  color: #fefefe;
+}
+
+/* Nút đổi sáng/tối */
+body.dark #theme-toggle-2 {
+  color: #fefefe;
+}
+
+/* Hiệu ứng mượt khi chuyển */
+* {
+  transition: background-color 0.4s ease, color 0.4s ease, filter 0.4s ease;
+}
+
 
 /* ========================
    TIÊU ĐỀ, NÚT, LIÊN KẾT
