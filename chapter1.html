@@ -143,5 +143,27 @@ Trong đầu tôi chợt nhớ lại cuộc trò chuyện của hai cậu học 
 <a href="#" id="backToTop" class="back-to-top">↑</a>
 
 <script src="premium.js"></script>
+
+<!-- Bình luận công khai Disqus -->
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = window.location.href;
+    this.page.identifier = document.title;
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://fuga-light.disqus.com/embed.js';  // shortname của bạn: fuga-light
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Vui lòng bật JavaScript để xem bình luận từ Disqus.
+</noscript>
+<!-- Hết phần bình luận -->
+
 </body>
+</html>
+
 </html>
