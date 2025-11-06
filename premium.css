@@ -29,10 +29,34 @@ main{max-width:900px;margin:24px auto;padding:0 16px}
 
 .site-footer{text-align:center;color:var(--muted);padding:28px 16px}
 
-.reader-top{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid #eee;background:linear-gradient(180deg,#fff,#f7f8fb)}
-.reader-top .logo{font-weight:700;text-decoration:none;color:var(--text)}
+.reader-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #222;
+  background: #1e1e2f; /* nền đậm dễ đọc */
+  color: #ffffff; /* chữ trắng rõ */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
-.chapter{max-width:760px;margin:18px auto;padding:18px;background:var(--card);border-radius:10px;box-shadow:0 10px 30px rgba(10,10,20,0.04)}
+.reader-top .logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.reader-top a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.reader-top a:hover {
+  color: #ffd166; /* vàng nhạt khi hover */
+}
+
 .page{margin-bottom:20px;padding-bottom:12px;border-bottom:1px dashed #f0f0f0}
 .illustration{display:flex;justify-content:center;margin:14px 0}
 .illustration img{max-width:100%;height:auto;border-radius:8px;cursor:pointer;box-shadow:0 12px 30px rgba(10,10,20,0.06)}
