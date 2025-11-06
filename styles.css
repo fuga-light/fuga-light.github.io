@@ -271,3 +271,33 @@ body.dark .qr-container {
 body.dark article, body article {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
+/* =====================
+   DARK MODE CƠ BẢN
+===================== */
+body.dark {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+}
+
+body.dark article {
+  background-color: #111;
+  color: #f1f1f1;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+body.dark a {
+  color: #79b8ff;
+}
+
+body.dark h2,
+body.dark h3,
+body.dark strong {
+  color: #fff;
+}
+
+body.dark img {
+  filter: brightness(0.9) contrast(1.1);
+  transition: 0.3s ease;
+}
