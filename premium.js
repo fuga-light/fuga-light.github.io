@@ -1,15 +1,16 @@
 
 // theme toggle
 function setTheme(isDark){
-  if(isDark) document.documentElement.classList.add('dark');
-  else document.documentElement.classList.remove('dark');
+  if(isDark) document.body.classList.add('dark');
+else document.body.classList.remove('dark');
+
   localStorage.setItem('fuga_theme_dark', isDark? '1' : '0');
 }
 document.addEventListener('DOMContentLoaded', ()=>{
   const saved = localStorage.getItem('fuga_theme_dark') === '1';
   setTheme(saved);
-  document.getElementById('theme-toggle').addEventListener('click', ()=> setTheme(!document.documentElement.classList.contains('dark')));
-  document.getElementById('theme-toggle-2').addEventListener('click', ()=> setTheme(!document.documentElement.classList.contains('dark')));
+  document.getElementById('theme-toggle').addEventListener('click', ()=> setTheme(!document.document.body.classList.contains('dark')));
+  document.getElementById('theme-toggle-2').addEventListener('click', ()=> setTheme(!document.document.body.classList.contains('dark')));
 
   // lightbox
   document.querySelectorAll('.illustration img').forEach(img=>{
