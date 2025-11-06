@@ -54,6 +54,27 @@ Trong đầu tôi chợt nhớ lại cuộc trò chuyện của hai cậu học 
       <p class="muted small">Bình luận hiện lưu trên thiết bị (local). Nếu muốn bình luận chung cho mọi người, có thể tích hợp Disqus.</p>
     </div>
   </section>
+  </article>
+
+<!-- Bình luận Disqus -->
+<section id="comments" style="margin-top: 50px;">
+  <h2>Bình luận (Disqus)</h2>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = window.location.href;  // URL của trang chương 1
+      this.page.identifier = "chapter1";     // Đặt ID riêng cho chương này
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://fuga-light.disqus.com/embed.js';  // shortname Disqus của bạn
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Vui lòng bật JavaScript để xem bình luận từ Disqus.</noscript>
+</section>
+
 </article>
 
 <div id="lightbox" class="lightbox" aria-hidden="true"><div class="lb-inner"><img src="" alt=""><button id="lb-close">✕</button></div></div>
