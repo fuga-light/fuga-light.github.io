@@ -203,7 +203,17 @@ Tôi khẽ bật cười trong lòng, cảm giác thật lạ.</p>
     <button class="react" data-type="love">💖 <span id="count-love">0</span></button>
     <button class="react" data-type="wow">😮 <span id="count-wow">0</span></button>
   </div>
-<div class="pinned"><strong>Ghim từ tác giả:</strong><p>Cảm ơn mọi người đã đọc! Hẹn gặp ở chương 5 ❤️</p></div>
+  <div class="comments">
+    <h3>Bình luận</h3>
+    <div class="pinned"><strong>Ghim từ tác giả:</strong><p>Cảm ơn mọi người đã đọc! Hẹn gặp ở chương 5 ❤️</p></div>
+    <form id="comment-form">
+      <input id="comment-name" placeholder="Nickname (tùy chọn)">
+      <textarea id="comment-body" placeholder="Viết bình luận..." required></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+    <div id="comments-list"></div>
+    <p class="muted small">Bình luận lưu trên thiết bị (local). Nếu muốn bình luận chung cho mọi người, có thể tích hợp Disqus.</p>
+  </div>
 </section>
 
 <section id="comments" style="margin-top: 50px;">
